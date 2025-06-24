@@ -1,7 +1,6 @@
-#Katelyn and Kristine worked together
-
 import random
 
+# Houston, Dallas, Austin, Abilene, Waco
 dist =[[0,241,162,351,183],
  [241,0,202,186,97],
  [162,202,0,216,106],
@@ -116,15 +115,4 @@ def main(popSize,chromoSize,geneBoundaries,mutRate,crossRate,maxGens):
     print(f' Minimum distance: {min_dist}, Optimal Path: {path}')
     
 main(popSize=500,chromoSize=32,geneBoundaries=dist,mutRate=.001,crossRate=.6,maxGens=100)
-
-{"Houston":{"Dallas":241,"Austin":162,"Abilene":351,"Waco":183},
- "Dallas":{"Houston":241,"Austin":202,"Abilene":186,"Waco":97},
- "Austin":{"Houston":162,"Dallas":202,"Abilene":216,"Waco":106},
- "Abilene":{"Houston":351,"Dallas":186,"Austin":216,"Waco":186},
- "Waco":{"Houston":183,"Dallas":97,"Austin":106,"Abilene":186}
- }
-
-{"Houston":1,"Dallas":2,"Austin":3,"Abilene":4,'Waco':5}
-
-#create random poplation randomly using 1,2,3,4,5 starting and ending with 1
 
